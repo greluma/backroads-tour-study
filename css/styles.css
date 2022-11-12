@@ -266,7 +266,11 @@ Navbar
   .nav-links {
     display: flex;
     flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: auto 0;
   }
@@ -497,6 +501,7 @@ Featured Tours
 
 .tour-img {
   height: 15rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -639,6 +644,22 @@ Contact
   border: transparent;
 }
 
+.form-control::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.form-control::-moz-placeholder {
+  color: inherit;
+}
+
+.form-control:-ms-input-placeholder {
+  color: inherit;
+}
+
+.form-control::-ms-input-placeholder {
+  color: inherit;
+}
+
 .form-control::placeholder {
   color: inherit;
 }
@@ -682,6 +703,7 @@ Gallery
 
 .gallery-img {
   height: 17rem;
+  -o-object-fit: cover;
   object-fit: cover;
   transition: var(--transition);
 }
